@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="color-scheme" content="dark light">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-shadow: 1px 1px 1px #717171;
+            transition: 1s;
+        }
+
+        .all {
+            position: absolute;
+            width: 0;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0px 0px 1vh 0px #000000;
+        }
+
+        #d1 {
+            transition: 0.2s;
+            z-index: 5;
+            height: 45vh;
+        }
+
+        #d2 {
+            transition: 0.4s;
+            z-index: 4;
+            height: 60vh;
+        }
+
+        #d3 {
+            transition: 0.6s;
+            z-index: 3;
+            height: 75vh;
+        }
+
+        #d4 {
+            transition: 0.8s;
+            z-index: 2;
+            height: 90vh;
+        }
+
+        #d5 {
+            transition: 1s;
+            z-index: 1;
+            height: 100vh;
+        }
+
+        #title1 {
+            text-align: center;
+            margin-top: 0.5vh;
+            font-size: 4vh;
+        }
+
+        #d {
+            text-align: center;
+            font-size: 7vh;
+        }
+
+        #h {
+            text-align: center;
+            font-size: 6vh;
+        }
+
+        #m {
+            text-align: center;
+            font-size: 5vh;
+        }
+
+        #s {
+            text-align: center;
+            font-size: 4vh;
+        }
+
+        #ms {
+            text-align: center;
+            font-size: 3vh;
+        }
+
+        #Randomfact {
+            text-align: center;
+            font-size: 2vh;
+            margin-top: 10px;
+            text-shadow: 0.5px 0.5px 0.5px #717171;
+        }
+
+        #reload {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 10vh;
+            width: auto;
+        }
+
+        #sidebar-image {
+            width: 100%;
+            height: 50%;
+            margin-top: 25%;
+        }
+
+        #sidebarButton {
+            position: fixed;
+            top: 0;
+            right: 2vw;
+            font-size: 5vw;
+            width: 6vw;
+            height: 6vw;
+            z-index: 100;
+            cursor: pointer;
+            text-shadow: none;
+            font-family: monospace !important;
+            line-height: normal !important;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #sidebar {
+            position: fixed;
+            width: 40vw;
+            height: 100vh;
+            right: -40vw;
+            top: 0;
+            background-color: wheat;
+            box-shadow: 0px 0px 1vh 0px #000000;
+            z-index: 100;
+            overflow-y: auto;
+        }
+
+        #moreInfo {
+            position: fixed;
+            width: 40vw;
+            height: 100vh;
+            right: -40vw;
+            top: 0;
+            background-color: wheat;
+            box-shadow: 0px 0px 1vh 0px #000000;
+            z-index: 100;
+            overflow-y: auto;
+        }
+
+        ol,
+        ::marker {
+            overflow: visible;
+            padding-left: 20px;
+            list-style-position: outside;
+        }
+
+        li {
+            overflow: visible;
+            list-style-position: outside;
+            margin-top: 5px;
+        }
+
+        tr td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #openSettingsButton {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 0.25em;
+        }
+
+        #settings {
+            padding: 20px;
+        }
+
+        #openSearchButton {
+            position: absolute;
+            right: 5px;
+            top: 2em;
+            font-size: 0.25em;
+        }
+        
+        
+        #openNoticesButton {
+            position: absolute;
+            right: 5px;
+            top: 3.75em;
+            font-size: 0.25em;
+        }
+        
+        
+
+        #search {
+            padding: 20px;
+        }
+		
+		.hide {
+			display: none;
+		}
+
+        #moreInfoButtonHover {
+            width: 0;
+            height: 0;
+            background-color: rgb(255, 220, 154);
+            border: 1px solid rgb(49, 48, 44);
+            border-radius: 5px;
+            z-index: 1000;
+            position: absolute;
+            left: -10000px;
+            top: -10000px;
+            transition: 0s;
+            box-shadow: 3px 5px 2vh 1px #000000;
+        }
+
+        .eventInfo {
+            border-radius: 10px;
+            background-color: wheat;
+            box-shadow: 0.5px 1px 0.25vh 0px #000000;
+            padding: 5px;
+            margin: 1vw;
+        }
+
+        .eventInfo:hover {
+            box-shadow: 2px 4px 1vh 1px #000000;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://swanviewshs.schoolzineplus.com/theme/website/szschool/css/style.css?v=1.0">
+    
+    <title id="title">Loading</title>
+
+</head>
+
+<body id="body">
+    <div id="d1" class="all">
+        <h1 id="title1">Loading...</h1>
+        <h1 id="d">Loading...</h1>
+        <h1 id="h"></h1>
+        <h1 id="m"></h1>
+        <h1 id="s"></h1>
+        <h1 id="ms"></h1>
+
+        <h1 id="Randomfact"></h1>
+    </div>
+    <div id="d2" class="all"></div>
+    <div id="d3" class="all"></div>
+    <div id="d4" class="all"></div>
+    <div id="d5" class="all"><img id="reload" src="./images/reload.png"></div>
+    <div id="sidebarButton"><img id="sidebar-image" src="./images/arrow.png"></div>
+    <div id="sidebar">
+        <h1 style='text-align: center;font-size: 5vw;'>Loading... <button
+                id='openSettingsButton'>Settings</button><button id='openSearchButton'>Search</button><button id='openNoticesButton'>Daily Notices</button></h1>
+    </div>
+    <div id="moreInfo">
+        <h1 class='event-calendar-title sub-txt' style='text-align: center;'>Loading...</h1>
+    </div>
+    <div id="moreInfoButtonHover"></div>
+
+
+    <script src="./ntab.js"></script>
+    <script src="./ntab2.js"></script>
+    <script src="./ntab3.js"></script>
+</body>
+
+</html>
